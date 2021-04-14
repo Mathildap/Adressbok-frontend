@@ -1,0 +1,90 @@
+/* - - - - - - - - - - FONTS - - - - - - - - - -
+font-family: 'Amatic SC', cursive;
+font-family: 'Open Sans', sans-serif;
+- - - - - - - - - - - - - -  - - - - - - - - - - */
+
+body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+/* - - - - - - - - - - ADD USER - - - - - - - - - - */
+.add-user-container {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(223, 214, 211);
+}
+.form {
+    background-color: rgb(97, 87, 87);
+    border-radius: 5px;
+    width: 60%;
+    padding: 15px;
+    margin: 5px auto;
+}
+.input-div {
+    margin: 0 auto;
+}
+input {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+    width: 95%;
+}
+.send-btn-div {
+    display: flex;
+    justify-content: flex-end;
+}
+#sendBtn {
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid rgb(145, 136, 136);
+    padding: 5px 10px;
+    right: 0px;
+    outline: none;
+}
+#randomBtn {
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid rgb(145, 136, 136);
+    padding: 5px 10px;
+    display: block;
+    margin: 15px auto;
+}
+#randomBtn:hover, #sendBtn:hover {
+    background-color: rgb(172, 159, 159);
+}
+
+/* - - - - - - - - - - ADRESS BOOK - - - - - - - - - - */
+.users-container {
+    background-color: rgb(109, 97, 97);
+    width: 50%;
+}
+.user-div {
+    /* width: 300px; */
+    padding: 15px;
+}
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgb(143, 136, 136);
+    letter-spacing: 1px;
+    padding: 15px;
+    margin: 0;
+}
+.hr {
+    height: 2px;
+    background-color: rgb(221, 214, 205);
+    border: 0;
+    border-radius: 5px;
+}

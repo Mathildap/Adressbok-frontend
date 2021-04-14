@@ -16,6 +16,10 @@ randomBtn.addEventListener("click", () => {
 
 
 function sendUser() {
+    if (userName.value == "") {
+        return;
+    };
+
     newUser = {userName: userName.value, userMail: userMail.value, userTel: userTel.value};
 
     fetch("http://localhost:3000/users/", {method: "post", headers: {"Content-type": "application/json"}, body: JSON.stringify(newUser)})
@@ -32,12 +36,12 @@ function printUsers() {
     .then(resp => resp.json())
     .then(data => {
         console.log("Get users: ", data);
-        usersContainer.insertAdjacentHTML("beforeend", `<h2>Alla användare</h2>`);
+        usersContainer.insertAdjacentHTML("beforeend", `<h2 class="users-h2">Alla användare</h2>`);
 
         for (user in data) {
-            usersContainer.insertAdjacentHTML("beforeend", `<div><h4>${data[user].userName}<br>
+            usersContainer.insertAdjacentHTML("beforeend", `<div class="user-div"><h4>${data[user].userName}<br>
             ${data[user].userMail}<br>
-            ${data[user].userTel}<br></h4></div>`);
+            ${data[user].userTel}<br></h4><hr class="hr"></div>`);
         };
     });
 };

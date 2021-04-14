@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="add-user-container">
         <h2>Lägg till person i adressbok</h2>
-        <form>
-        <div><input type="text" id="userName" placeholder="Namn"></div>
-        <div><input type="email" id="userMail" placeholder="E-post"></div>
-        <div><input type="tel" id="userTel" placeholder="Telefonnummer"></div>
-        <div><button type="submit" id="sendBtn">Skicka</button></div>
+        <form class="form">
+        <div class="input-div"><input type="text" id="userName" placeholder="Namn"></div>
+        <div class="input-div"><input type="email" id="userMail" placeholder="E-post"></div>
+        <div class="input-div"><input type="tel" id="userTel" placeholder="Telefonnummer"></div>
+        <div class="send-btn-div"><button type="submit" id="sendBtn">Skicka</button></div>
         </form>
         <button id="randomBtn">Slumpa användare</button>
     </div>
 
-    <div id="usersContainer"></div>
+    <div id="usersContainer" class="users-container"></div>
     <script src="script.js"></script>
 </body>
 </html>
