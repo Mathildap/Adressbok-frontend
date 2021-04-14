@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
     <div>
-        <h2>Dina uppgifter</h2>
+        <h2>Lägg till person i adressbok</h2>
+        <form>
         <div><input type="text" id="userName" placeholder="Namn"></div>
         <div><input type="email" id="userMail" placeholder="E-post"></div>
         <div><input type="tel" id="userTel" placeholder="Telefonnummer"></div>
         <div><button type="submit" id="sendBtn">Skicka</button></div>
+        </form>
+        <button id="randomBtn">Slumpa användare</button>
     </div>
 
     <div id="usersContainer"></div>
